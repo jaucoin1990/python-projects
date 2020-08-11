@@ -2,6 +2,8 @@ import json
 from difflib import get_close_matches
 
 data = json.load(open("data.json", "r"))
+data = {k.lower(): v for k, v in data.items()}
+
 
 def similar(word1, dict=data):
     list = dict.keys()
@@ -13,6 +15,7 @@ def value_returner(key, file=data):
 
 
 print("This is a dictionary. Enter the word you'd like defined. When you're done using me to define words, type 'end' instead of a word.")
+
 while True:
     key = input("\nEnter word: ").lower()
 
@@ -36,3 +39,4 @@ while True:
                break
     else:
         print("I don't know that word. Try a different word.")
+        
