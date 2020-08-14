@@ -29,7 +29,7 @@ def map_fun(file, lat, lon, elev):
 
     for lt, ln, el in zip(lat, lon, elev):
         fg.add_child(folium.Marker(location=(lt, ln), popup=str(el) + "m", icon=folium.Icon(color=color_producer(el))))
-
+        
     map.add_child(fg)
 
     map.save("map1.html")
