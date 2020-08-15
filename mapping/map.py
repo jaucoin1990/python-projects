@@ -31,8 +31,9 @@ def map_fun(file, lat, lon, elev):
         fg.add_child(folium.Marker(location=(lt, ln), popup=str(el) + "m", icon=folium.Icon(color=color_producer(el))))
         
     map.add_child(fg)
-
     map.save("map1.html")
+
+
 
 map_fun("Volcanoes.txt", "LAT", "LON", "ELEV")
 
