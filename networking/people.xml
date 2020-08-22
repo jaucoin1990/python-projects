@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<People>
+
+    <Person Id="1"> 
+        <FirstName>Jeremy</FirstName>
+        <LastName>Aucoin</LastName>
+        <Email>jaucoin@test.com</Email>
+    </Person>
+
+    <Person Id="2">
+        <FirstName>Joceline</FirstName>
+        <LastName>Howard</LastName>
+        <Email>jhoward@test.com</Email>
+    </Person>
+
+    <Person Id="3">
+        <FirstName>Cody</FirstName>
+        <LastName>Aucoin</LastName>
+        <Email>caucoin@test.com</Email>
+    </Person>
+
+</People>
+
+<!-- Learning: 
+    People is an element because it has an opening and closing tag of <People> and </People>
+    Attributes are added within tags, such as ID="1"
+    This is well-written XML because it has a declaration
+ -->
